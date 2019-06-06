@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node intex.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.5.13"
+    "mongoose": "^5.5.13",
+    "nodemon": "^1.19.1"
   }
 }
