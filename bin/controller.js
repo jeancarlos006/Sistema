@@ -8,7 +8,7 @@ async connect(){
 
 try{
 await mongoose.connect(
-    "mongodb+srv://JoelNaranjo:joel123456789@cluster0-axepn.mongodb.net/mySistemPlanet?retryWrites=true&w=majority",
+    "mongodb+srv://jeancarlos006:jeancarlos16fcb.@cluster0-wzhie.mongodb.net/SISTEMA?retryWrites=true&w=majority",
     {useNewUrlParser:true}
 );
 console.log("conectados a la base de datos!")
