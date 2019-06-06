@@ -17,7 +17,12 @@ console.log("conectados a la base de datos!")
     console.error(e)
 }
 }
-getUsers(res){}
+getUsers (res){
+    User.find({},(err,users)=>{
+        if(err) throw err;
+        res.send(users);
+    })
+}
 }
 
 exports.controller = new controller()
