@@ -15,5 +15,10 @@ app.get("/users",(req,res)=>{
     controller.getUsers(res);
 
 })
+ app.post("/users",(req, res)=>{
+     console.log(req.body);
+     res.send('ok');        
+    })
+
 
 exports.app = app;
