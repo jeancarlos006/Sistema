@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const User = require("./models/User");
 
 class controller{
     constructor (){
@@ -16,6 +17,7 @@ console.log("conectados a la base de datos!")
     console.error(e)
 }
 }
+getUsers(res){}
 }
 
 exports.controller = new controller()
