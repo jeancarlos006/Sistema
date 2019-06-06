@@ -7,18 +7,12 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/users",(req,res)=>{
-    /*let users = [
-    {name:"jean", password:"1234"},
-    {name:"Ana", password:"jknbrk4"}
-    ]
-    res.send(users);*/
+    
     controller.getUsers(res);
 
 })
  app.post("/users",(req, res)=>{
-     console.log(req.body);
-     res.send('ok');        
-    })
-
+     controller.postUsers(req, res)
+ })
 
 exports.app = app;

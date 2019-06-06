@@ -12,7 +12,7 @@ await mongoose.connect(
     "mongodb+srv://jeancarlos006:jeancarlos16fcb.@cluster0-wzhie.mongodb.net/SISTEMA?retryWrites=true&w=majority",
     {useNewUrlParser:true}
 );
-console.log("conectados a la base de datos!")
+console.log('conectados a la base de datos!')
 }catch(e){
     console.error(e)
 }
@@ -23,6 +23,13 @@ getUsers (res){
         res.send(users);
     })
 }
+}
+postUsers(req, res){
+    let user = req.boddy.users;
+    User.create(user,(err, newUser)=>{
+        if(err) throw err;
+        res.send({nU:newUser})
+    })
 }
 
 exports.controller = new controller()
