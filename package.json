@@ -1,6 +1,6 @@
 {
   "name": "Sistema",
-  "description":"",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -18,10 +18,9 @@
     "url": "https://github.com/jeancarlos006/Sistema/issues"
   },
   "homepage": "https://github.com/jeancarlos006/Sistema#readme",
-  "description": "",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.5.13",
+    "mongoose": "^5.5.14",
     "nodemon": "^1.19.1"
   }
 }
