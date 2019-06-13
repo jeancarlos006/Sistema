@@ -20,4 +20,27 @@ app.get("/evaluacion/:notaMayor",(req,res)=>{
     //controller.getUsers(res);
 })
 
+app.get("/evaluacion/:notaMayor_f/usuario/genero_f",(req,res)=>{
+    var notaMayor_f = req.params.notaMayor_f;
+    console.log(notaMayor_f)
+    res.send('ok')
+    //controller.getUsers(res);
+})
+
+app.get("/usuario/:genero_m",(req,res)=>{
+    var genero_m = req.params.genero_m;
+    console.log(genero_m)
+    res.send('ok')
+    //controller.getUsers(res);
+})
+
+app.get("/evaluacion/:notaMayor_m/usuario/genero_m",(req,res)=>{
+    var notaMayor_m = req.params.notaMayor_m;
+    var genero_m = req.params.genero_m;
+    console.log(notaMayor_m  ,genero_m)
+    res.send('ok')
+    //controller.getUsers(res);
+})
+
+
 exports.app = app;
