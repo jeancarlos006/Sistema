@@ -42,5 +42,19 @@ app.get("/evaluacion/:notaMayor_m/usuario/genero_m",(req,res)=>{
     //controller.getUsers(res);
 })
 
+app.get("/usuario/edad/:edadMayor",(req,res)=>{
+    var edadMayor = req.params.edadMayor;
+    console.log(edadMayor)
+    res.send('ok')
+    //controller.getUsers(res);
+})
+
+app.get("/usuario/genero/:genero_f/edad/:edadMenor",(req,res)=>{
+    var genero_f = req.params.genero_f;
+    var edadMenor = req.params.edadMenor;
+    console.log(edadMenor, genero_f)
+    res.send('ok')
+    //controller.getUsers(res);
+})
 
 exports.app = app;
