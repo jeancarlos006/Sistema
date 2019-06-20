@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jeancarlos006/Sistema#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.5.15",
+    "mongoose": "^5.6.0",
     "nodemon": "^1.19.1"
   }
 }

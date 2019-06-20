@@ -34,7 +34,7 @@ app.get("/usuario/:genero_m",(req,res)=>{
     //controller.getUsers(res);
 })
 
-app.get("/evaluacion/:notaMayor_m/usuario/genero_m",(req,res)=>{
+app.get("/evaluacion/:notaMayor_m/usuario/:genero_m",(req,res)=>{
     var notaMayor_m = req.params.notaMayor_m;
     var genero_m = req.params.genero_m;
     console.log(notaMayor_m  ,genero_m)
