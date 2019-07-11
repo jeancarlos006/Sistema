@@ -17,17 +17,17 @@ class controller{
         console.error(e)
     }
     }
-    getusuario (res){
-        usuario.find({},(err,usuarios)=>{
+    getUsers (res){
+        User.find({},(err,users)=>{
             if(err) throw err;
-            res.send(usuarios);
+            res.send(users);
         })
     }
-    postusuarios(req, res){
-        let usuario = req.boddy.usuarios;
-        usuario.create(usuario,(err, newUser)=>{
+    postUsers(req, res){
+        let user = req.boddy.users;
+        User.create(user,(err, newUser)=>{
             if(err) throw err;
-            res.send({nU:newusuario})
+            res.send({nU:newUser})
         })
     }
 
