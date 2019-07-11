@@ -7,7 +7,7 @@ class controller{
     }
     async connect(){
 
-    try{    
+    try{
     await mongoose.connect(
         "mongodb+srv://jeancarlos006:jeancarlos16fcb.@cluster0-wzhie.mongodb.net/SISTEMA?retryWrites=true&w=majority",
                     {useNewUrlParser:true}
@@ -17,17 +17,17 @@ class controller{
         console.error(e)
     }
     }
-    getUsers (res){
-        User.find({},(err,users)=>{
+    getusuario (res){
+        usuario.find({},(err,usuarios)=>{
             if(err) throw err;
-            res.send(users);
+            res.send(usuarios);
         })
     }
-    postUsers(req, res){
-        let user = req.boddy.users;
-        User.create(user,(err, newUser)=>{
+    postusuarios(req, res){
+        let usuario = req.boddy.usuarios;
+        usuario.create(usuario,(err, newUser)=>{
             if(err) throw err;
-            res.send({nU:newUser})
+            res.send({nU:newusuario})
         })
     }
 
