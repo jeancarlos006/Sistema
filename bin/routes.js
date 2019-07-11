@@ -7,6 +7,7 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/users",(req,res)=>{
+
     controller.getUsers(res);
 })
  app.post("/users",(req, res)=>{
