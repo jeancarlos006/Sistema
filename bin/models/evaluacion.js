@@ -4,6 +4,8 @@
     const evaluacionSchema = new Schema ({
     nombre: String,
     nota: String,
+    idcontenido:{ref: contenido, id:objectid},
+    idUser:{ref: User,id:objectid}
 
     });
 
