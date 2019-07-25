@@ -8,7 +8,7 @@ const UserSchema = new Schema ({
  genero:String,
  correo:String,
  contraseña:String,
- idcontenido:{ref:contenido,id:objectid}
+//* idcontenido:{ref:contenido,id:objectid}
 });
 
 var User=  mongoose.model("User",UserSchema);

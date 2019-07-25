@@ -5,8 +5,8 @@
     descripcion: String,
     documento: String,
     videos:String,
-    idactividad:{ref: actividad, id:objectid},
-    idevaluacion:{ref: evaluacion, id:objectid}
+   //* idactividad:{ref: actividad, id:objectid},
+   //* idevaluacion:{ref: evaluacion, id:objectid}
     });
 
     var contenido=  mongoose.model("contenidoSchema",contenidoSchema);
