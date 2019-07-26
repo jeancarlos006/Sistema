@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("./models/User");
+const evaluacion = require("./models/evaluacion");
 
 class controller{
     constructor (){
@@ -23,6 +24,14 @@ class controller{
             res.send(users);
         })
     }
+
+    getevaluaciones (res){
+        evaluacion.find({},(err,evaluaciones)=>{
+            if(err) throw err;
+            res.send(evaluaciones);
+        })
+    }
+
     postUsers(req, res){
         let user = req.boddy.users;
         User.create(user,(err, newUser)=>{

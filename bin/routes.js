@@ -10,6 +10,12 @@ app.get("/users",(req,res)=>{
 
     controller.getUsers(res);
 })
+
+app.get("/evaluaciones",(req,res)=>{
+
+    controller.getevaluaciones(res);
+})
+
  app.post("/users",(req, res)=>{
      controller.postUsers(req, res)
  })
