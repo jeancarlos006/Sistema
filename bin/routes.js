@@ -16,6 +16,16 @@ app.get("/evaluaciones",(req,res)=>{
     controller.getevaluaciones(res);
 })
 
+app.get("/actividades",(req,res)=>{
+
+    controller.getactividades(res);
+})
+
+app.get("/contenidos",(req,res)=>{
+
+    controller.getcontenidos(res);
+})
+
  app.post("/users",(req, res)=>{
      controller.postUsers(req, res)
  })
