@@ -37,6 +37,9 @@ app.post("/contenidos", (req, res) => {
 app.post("/actividades", (req, res) => {
     controller.postActividad(req, res)
 })
+app.post("/evaluaciones", (req, res) => {
+    controller.postEvaluacion(req, res)
+})
 
 
 app.get("/evaluacion/:notaMayor", (req, res) => {

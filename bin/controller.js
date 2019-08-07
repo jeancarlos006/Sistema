@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("./models/User");
-const evaluacion = require("./models/evaluacion");
+const Evaluacion = require("./models/Evaluacion");
 const Actividad = require("./models/Actividad");
 const Contenido = require("./models/Contenido");
 
@@ -64,6 +64,18 @@ class controller {
         })
     }
 
+    postEvaluacion(req, res) {
+        //let user = req.boddy.users;
+        let evaluacion = {
+            Nombre: 'pedro', Nota: '4.2',
+            Nombre: 'Maria', Nota: '3.8'
+        }
+        Evaluacion.create(evaluacion, (err, newUser) => {
+            if (err) throw err;
+            res.send({ nU: newUser })
+        })
+    }
+
     postActividad(req, res) {
         //let user = req.boddy.users;
         let actividad = { nombre: 'Des', propiedades: 'doc' }
@@ -73,5 +85,6 @@ class controller {
         })
     }
 }
+
 
 exports.controller = new controller()
