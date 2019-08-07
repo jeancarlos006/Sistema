@@ -57,7 +57,7 @@ app.get("/usuario/:genero_m", (req, res) => {
     var genero_m = req.params.genero_m;
     console.log(genero_m)
     res.send('ok')
-    //controller.getUsers(res);
+    ///controller.getUsers(res);
 })
 
 app.get("/evaluacion/:notaMayor_m/usuario/:genero_m", (req, res) => {
